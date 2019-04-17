@@ -72,7 +72,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Build
+          name: Build Service 1
           command: |
             /scripts/go_build.sh ${PROJECT_NAME} ${PROJECT_NAME}
       - run:
@@ -116,7 +116,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Build
+          name: Build Service 3
           command: |
             /scripts/go_build.sh ${PROJECT_NAME} ${PROJECT_NAME}
       - run:

@@ -128,3 +128,19 @@ jobs:
           destination: raw-test-output
       - store_test_results:
           path: /tmp/test-results
+  service4:
+    working_directory: /go/src/github.com/tufin/circleci-monorepo
+    docker:
+      - image: ruby:2.6-alpine3.9
+    environment:
+    steps:
+      - checkout
+      - run:
+          name: Build Service 4
+          command: |
+            cd service4; bundle;
+      - run:
+          name: Run Tests
+          command: |
+            cd service4; bundle exec rspec;
+

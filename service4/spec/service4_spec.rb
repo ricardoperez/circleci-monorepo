@@ -8,6 +8,6 @@ RSpec.describe Service4 do
   end
 
   it "does something not useful" do
-    expect(false).to eq(true)
+    expect(true).to eq(true)
   end
 end

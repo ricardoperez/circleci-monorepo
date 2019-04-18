@@ -131,7 +131,7 @@ jobs:
   service4:
     working_directory: /go/src/github.com/tufin/circleci-monorepo
     docker:
-      - image: ruby:2.6-alpine3.8
+      - image: circleci/ruby:2.6.0
     environment:
     steps:
       - checkout
